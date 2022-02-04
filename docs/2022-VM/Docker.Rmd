@@ -1,0 +1,32 @@
+---
+title:  "An introduction to using virtual machines"
+subtitle: "A hands-on show-and-tell with GH repos"
+author: "Eli Holmes<br>NOAA Fisheries, NWFSC<br>`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    self_contained: true
+    css: ["../xaringan-themer.css", "../slides-style.css"]
+    lib_dir: libs
+    nature:
+      ratio: '4:3'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc( (%current% - 1) / (%total% - 1) * 100%);">
+          </div>
+        </div>`
+---
+layout: true
+
+.footnote[U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service]
+
+
+
+---
+
+## Notes
+
+https://www.weave.works/blog/a-practical-guide-to-choosing-between-docker-containers-and-vms
+

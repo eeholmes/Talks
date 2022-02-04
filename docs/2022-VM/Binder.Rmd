@@ -1,0 +1,88 @@
+---
+title:  "An introduction to using virtual machines"
+subtitle: "A hands-on show-and-tell with GH repos"
+author: "Eli Holmes<br>NOAA Fisheries, NWFSC<br>`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    self_contained: true
+    css: ["../xaringan-themer.css", "../slides-style.css"]
+    lib_dir: libs
+    nature:
+      ratio: '4:3'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc( (%current% - 1) / (%total% - 1) * 100%);">
+          </div>
+        </div>`
+---
+layout: true
+
+.footnote[U.S. Department of Commerce | National Oceanic and Atmospheric Administration | National Marine Fisheries Service]
+
+
+```{r setup-binder, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+
+---
+name: threecolumn
+text: Three columns
+
+
+## Three column format
+
+.three-column[
+Column 1
+
+You can have code.
+
+```{r}
+lm(mpg ~ hp, data=mtcars)
+```
+]
+
+.three-column[
+Column 2
+
+You can have images and embed video.
+
+![](static/slideswooshver.png)
+
+<iframe width="200" height="130" src="https://www.youtube.com/embed/BCMjVc9ncFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+
+.three-column[
+Column 3
+
+&#127758; January 25, 2022 
+
+&#127767; 09:00 - 17:00  
+
+&#127881;    [rverse](http://rverse-tutorials.github.io)
+
+]
+
+
+---
+name: full
+text: Plot fills the slide
+
+
+class: full
+background-image: url("")
+background-color: white
+
+```{r, fig.asp = 3/4, fig.align = 'center', echo = FALSE, out.width = "96%", dpi= 300, warning = FALSE}
+library(ggplot2)
+
+ggplot(mtcars) +
+  aes(mpg, hp,
+      color = cyl) +
+  geom_point() +
+  theme_minimal() +
+  labs(title = "mpg vs hp")
+```
