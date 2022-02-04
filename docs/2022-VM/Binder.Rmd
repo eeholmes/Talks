@@ -27,6 +27,12 @@ layout: true
 options(htmltools.dir.version = FALSE)
 ```
 
+---
+
+## Notes
+
+* https://github.com/rocker-org/binder/
+* https://github.com/binder-examples/r
 
 ---
 name: threecolumn
